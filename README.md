@@ -19,7 +19,8 @@ __Edit:__ I am using visual studio code with Pio, and I have recognised that thi
 #### Update 2 : 
 The code it uploaded successfully, previously It was showing errors in VS code.
 
-Update 3 : Managed to compile and upload the code with IDF 4.4.5 in 2-3 days, got printed global and local IPv6, but not sure if it will work to connect with internet or not, I will try to update if I will remember, thanks for giving me hope
+#### Update 3 :
+Managed to compile and upload the code with IDF 4.4.5 in 2-3 days, got printed global and local IPv6, but not sure if it will work to connect with internet or not, I will try to update if I will remember, thanks for giving me hope
 
 #### Update 4 :
 
