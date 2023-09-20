@@ -7,7 +7,8 @@ I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. T
 [ESP IDF menuconfig](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/kconfig.html#configuration-options-reference)  
 
 ### About IP6 20/09/2023
-> **Every setting containing IP6 word in main title**  
+> **Every setting containing IP6 word in main title**
+  
 **_CONFIG_LWIP_IP6_FRAG_**  
 Enable fragment outgoing IP6 packets
 
