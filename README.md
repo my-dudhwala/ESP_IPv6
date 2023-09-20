@@ -11,7 +11,7 @@ I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. T
 > E (13735) HTTP_CLIENT: Connection failed, sock < 0  
 > E (13740) HTTP_CLIENT: HTTP GET request failed: ESP_ERR_HTTP_CONNECT  
 
-## Old updates
+## Initial and old updates
 > This updates were initially updated on reddit post, now its copy is placed below,
 
 Problem statement: I am using generic ESP32 module with ESP Wroom 32 chip. I am trying to connect it with WiFi router with IPv6 configuration as the router is IPv6 only. I have spent hours of working on it, I have tried many codes from GitHub, ChatGPT and many other articles. Please guide me regarding this, and take me as a beginner, Thank you
