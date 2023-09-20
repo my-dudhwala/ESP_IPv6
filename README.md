@@ -70,7 +70,16 @@ No hook declared (LWIP_HOOK_IP6_SELECT_SRC_ADDR_NONE)
 Default (weak) implementation (LWIP_HOOK_IP6_SELECT_SRC_ADDR_DEFAULT)  
   
 Custom implementation (LWIP_HOOK_IP6_SELECT_SRC_ADDR_CUSTOM)  
-## Example codes and errors
+
+_**CONFIG_LWIP_IP6_DEBUG**_  
+Enable IP6 debug messages  
+  
+Found in: Component config > LWIP > CONFIG_LWIP_DEBUG  
+  
+Default value:  
+No (disabled) if CONFIG_LWIP_DEBUG  
+  
+## Example codes and errors  
 - 20/09/2023
   - esp_http_client(Builtin exaple)
 > IDF 4.4.5
