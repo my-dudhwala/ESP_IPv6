@@ -1,10 +1,15 @@
 # ESP_IPv6
 I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. This repo is made to update my work. I'm sharing this repo where I have to update status of my work, I am open to modify this document from anyone. And I am open to collaborate on this until the project works successfully.
 
-## Cureent Status
+## Example codes and errors
 - 20/09/2023
-  - All of my tested codes are given below,
-    - [All of failed codes](https://github.com/my-dudhwala/ESP_IPv6/tree/main/Failed%20codes)
+  - esp_http_client(Builtin exaple)
+  - IDF 4.4.5
+      - Errors:
+        E (13733) esp-tls: [sock=54] select() timeout
+        E (13734) TRANSPORT_BASE: Failed to open a new connection: 32774
+        E (13735) HTTP_CLIENT: Connection failed, sock < 0
+        E (13740) HTTP_CLIENT: HTTP GET request failed: ESP_ERR_HTTP_CONNECT
 
 ## Old updates
 > This updates were initially updated on reddit post, now its copy is placed below,
