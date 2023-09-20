@@ -1,13 +1,18 @@
 # ESP_IPv6
 I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. This repo is made to update my work. I'm sharing this repo to update status of my work, I am open to modify this document from anyone. And I am open to collaborate on this until the project works successfully.
 
+## Important updates
+> I am using **IDF version 4.4.5** to test some codes which are supported in this version without any problem.
+**Code related updates**
+> According to IDF documents, "Enable IPv4 stack. If you want to use IPv6 only TCP/IP stack, disable this." but I'm not seeing any exact option to the same, but yea, there are related options available. _There is an option named "Enable IPv4 Link-Local Addressing(AUTOIP)" but this is not disabling._
+
 ## Menuconfig: Every setting about IPv6 20/09/2023
 **Note:** For this I have searched on IDF article(Link is given below) about all of IPv6 menuconfig options, if you don't know about menuconfig, probably you are not using IDF, in IDF there is a long GUI setting to configure ESP code automatically. If you are using IDF and dont know menuconfig, enter "idf.py menuconfig" in cmd(Windows) you will know it soon in your ESP IDF journey...!, I am sorry if you are not using CLI, and yea, the configuration menu is also available in VS Code, IDF extension..., but CLI is more faster than VS code, I use VS code for editing the code only, Thanks  
 
 [ESP IDF menuconfig](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/kconfig.html#configuration-options-reference)  
 
 ### About IP6 20/09/2023
-> **Every setting containing IP6 word in main title**
+> Every setting containing **"IP6"** word in main title
   
 **_CONFIG_LWIP_IP6_FRAG_**  
 Enable fragment outgoing IP6 packets
@@ -78,6 +83,79 @@ Found in: Component config > LWIP > CONFIG_LWIP_DEBUG
   
 Default value:  
 No (disabled) if CONFIG_LWIP_DEBUG  
+
+> Every setting containing **"IPv6"** word in main title
+
+_**CONFIG_LWIP_IPV6_DHCP6**_  
+Enable DHCPv6 stateless address autoconfiguration  
+  
+Found in: Component config > LWIP  
+  
+Enable DHCPv6 for IPv6 stateless address autoconfiguration. Note that the dhcpv6 client has to be started using dhcp6_enable_stateless(netif); Note that the stateful address autoconfiguration is not supported.  
+  
+Default value:  
+No (disabled) if CONFIG_LWIP_IPV6_AUTOCONFIG  
+
+_**CONFIG_LWIP_IPV6**_  
+Enable IPv6  
+  
+Found in: Component config > LWIP  
+  
+Enable IPv6 function. If not use IPv6 function, set this option to n. If disabling LWIP_IPV6 then some other components (coap and asio) will no longer be available.  
+
+Default value:  
+Yes (enabled)  
+  
+_**CONFIG_LWIP_IPV6_ND6_NUM_NEIGHBORS**_  
+Max number of entries in IPv6 neighbor cache  
+  
+Found in: Component config > LWIP  
+  
+Config max number of entries in IPv6 neighbor cache  
+  
+Range:  
+from 3 to 10  
+  
+Default value:  
+5  
+  
+[More about Neighbor Discovery](https://blogs.infoblox.com/ipv6-coe/ipv6-neighbor-discovery-cache-part-1-of-2/)  
+
+_**CONFIG_LWIP_IPV6_MEMP_NUM_ND6_QUEUE**_  
+Max number of IPv6 packets to queue during MAC resolution  
+  
+Found in: Component config > LWIP  
+  
+Config max number of IPv6 packets to queue during MAC resolution.  
+  
+Range:  
+from 3 to 20  
+  
+Default value:  
+3  
+
+_**CONFIG_LWIP_IPV6_RDNSS_MAX_DNS_SERVERS**_  
+Use IPv6 Router Advertisement Recursive DNS Server Option  
+  
+Found in: Component config > LWIP  
+  
+Use IPv6 Router Advertisement Recursive DNS Server Option (as per RFC 6106) to copy a defined maximum number of DNS servers to the DNS module. Set this option to a number of desired DNS servers advertised in the RA protocol. This feature is disabled when set to 0.  
+  
+Default value:  
+0 if CONFIG_LWIP_IPV6_AUTOCONFIG  
+  
+_**CONFIG_LWIP_ND6**_  
+LWIP NDP6 Enable/Disable  
+  
+Found in: Component config > LWIP  
+  
+This option is used to disable the Network Discovery Protocol (NDP) if it is not required. Please use this option with caution, as the NDP is essential for IPv6 functionality within a local network.  
+  
+Default value:  
+Yes (enabled)  
+
+
+  
   
 ## Example codes and errors  
 - 20/09/2023
