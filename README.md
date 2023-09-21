@@ -2,12 +2,13 @@
 I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. This repo is made to update my work. I'm sharing this repo to update status of my work, I am open to modify this document from anyone. And I am open to collaborate on this until the project works successfully.
 
 > You are requested to formate this document where you think it should.
-
 ## Important updates
 > I am using **IDF version 4.4.5** to test some codes which are supported in this version without any problem.
 **Code related updates**
 > According to IDF documents, "Enable IPv4 stack. If you want to use IPv6 only TCP/IP stack, disable this." but I'm not seeing any exact option to the same, but yea, there are related options available. _There is an option named "Enable IPv4 Link-Local Addressing(AUTOIP)" but this is not disabling._
 
+### 21/09/2023
+[Got a reply on Reddit](https://www.reddit.com/r/ipv6/comments/16ods1t/comment/k1k2rtl/)
 ## Menuconfig: Every setting about IPv6 20/09/2023
 **Note:** For this I have searched on IDF article(Link is given below) about all of IPv6 menuconfig options, if you don't know about menuconfig, probably you are not using IDF, in IDF there is a long GUI setting to configure ESP code automatically. If you are using IDF and dont know menuconfig, enter "idf.py menuconfig" in cmd(Windows) you will know it soon in your ESP IDF journey...!, I am sorry if you are not using CLI, and yea, the configuration menu is also available in VS Code, IDF extension..., but CLI is more faster than VS code, I use VS code for editing the code only, Thanks  
 
