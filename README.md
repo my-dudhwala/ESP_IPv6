@@ -189,6 +189,8 @@ Managed to compile and upload the code with IDF 4.4.5 in 2-3 days, got printed g
 
 (This is copied comment from a new reddit and IDF post)Getting above error in IDF while compiling a code, which is a merged code. I have merged 2 codes, one is IPv6 from a git repo(Link is given below) and the second code is esp32 with google sheet(Link is attached), help please, and I am not sure that the IPv6 code is working correctly or not but I have managed to get serial output. take me as a very beginner in IDF, thank you
 
+[Reddit post](https://www.reddit.com/r/arduino/comments/15spv4q/how_to_connect_esp32_to_wifi_with_ipv6/)
+
 GitHub for IPv6:https://github.com/amitesh-singh/EspDDNS_with_IDF
 
 ESP32 and Google Sheet automation:https://iotdesignpro.com/articles/esp32-data-logging-to-google-sheets-with-google-scripts
