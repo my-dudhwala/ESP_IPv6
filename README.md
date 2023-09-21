@@ -11,8 +11,49 @@ I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. T
 [Got a reply on Reddit IPv6 community](https://www.reddit.com/r/ipv6/comments/16ods1t/comment/k1k2rtl/)  
 
 #### Error update
-Inbuilt example Code: Espressif\frameworks\esp-idf-v4.4.5\examples\protocols\http_request>
-[On GitHub](https://github.com/espressif/esp-idf/blob/master/examples/protocols/http_request/main/http_request_example_main.c)
+Inbuilt example Code: Espressif\frameworks\esp-idf-v4.4.5\examples\protocols\http_request>  
+[On GitHub](https://github.com/espressif/esp-idf/blob/master/examples/protocols/http_request/main/http_request_example_main.c)  
+**Error :** socket connect failed errno=113  
+**Serial Output :**  
+
+I (4966) esp_netif_handlers: example_connect: sta ip: 192.168.0.236, mask: 255.255.255.0, gw: 192.168.0.254
+
+I (4967) example_connect: Got IPv4 event: Interface "example_connect: sta" address: 192.168.0.236
+
+I (5550) example_connect: Got IPv6 event: Interface "example_connect: sta" address: fe80:0000:0000:0000:96e6:86ff:fe05:0dd0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+
+I (7549) example_connect: Got IPv6 event: Interface "example_connect: sta" address: 2002:c0a8:00fe:0001:96e6:86ff:fe05:0dd0, type: ESP_IP6_ADDR_IS_GLOBAL
+
+I (7554) example_connect: Got IPv6 event: Interface "example_connect: sta" address: 2002:c0a8:0165:0001:96e6:86ff:fe05:0dd0, type: ESP_IP6_ADDR_IS_GLOBAL
+
+I (7568) example_connect: Connected to example_connect: sta
+
+I (7574) example_connect: - IPv4 address: 192.168.0.236
+
+I (7580) example_connect: - IPv6 address: fe80:0000:0000:0000:96e6:86ff:fe05:0dd0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
+
+I (7591) example_connect: - IPv6 address: 2002:c0a8:00fe:0001:96e6:86ff:fe05:0dd0, type: ESP_IP6_ADDR_IS_GLOBAL
+
+I (7602) example_connect: - IPv6 address: 2002:c0a8:0165:0001:96e6:86ff:fe05:0dd0, type: ESP_IP6_ADDR_IS_GLOBAL
+
+I (7627) example: DNS lookup succeeded. IP=93.184.216.34
+
+I (7628) example: ... allocated socket
+
+I (8885) wifi:<ba-add>idx:1 (ifx:0, b0:be:76:59:c5:02), tid:6, ssn:2, winSize:64
+
+**E (25890) example: ... socket connect failed errno=113**
+
+I (29891) example: DNS lookup succeeded. IP=93.184.216.34
+
+I (29892) example: ... allocated socket
+
+**E (48405) example: ... socket connect failed errno=113**
+
+I (52406) example: DNS lookup succeeded. IP=93.184.216.34
+
+I (52407) example: ... allocated socket
+
 ## Menuconfig: Every setting about IPv6 20/09/2023
 **Note:** For this I have searched on IDF article(Link is given below) about all of IPv6 menuconfig options, if you don't know about menuconfig, probably you are not using IDF, in IDF there is a long GUI setting to configure ESP code automatically. If you are using IDF and dont know menuconfig, enter "idf.py menuconfig" in cmd(Windows) you will know it soon in your ESP IDF journey...!, I am sorry if you are not using CLI, and yea, the configuration menu is also available in VS Code, IDF extension..., but CLI is more faster than VS code, I use VS code for editing the code only, Thanks  
 
