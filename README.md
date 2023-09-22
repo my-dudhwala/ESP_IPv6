@@ -66,7 +66,7 @@ I (52407) example: ... allocated socket
 
 [ESP IDF menuconfig](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/kconfig.html#configuration-options-reference)  
   
-> Every setting containing **"IP6"** word in main title is given below, as of 20/09/2023
+### Every setting containing **"IP6"** word in main title is given below, as of 20/09/2023
   
 **_CONFIG_LWIP_IP6_FRAG_**  
 Enable fragment outgoing IP6 packets
@@ -138,7 +138,7 @@ Found in: Component config > LWIP > CONFIG_LWIP_DEBUG
 Default value:  
 No (disabled) if CONFIG_LWIP_DEBUG  
 
-> Every setting containing **"IPv6"** word in main title is given below, as of 20/09/2023
+### Every setting containing **"IPv6"** word in main title is given below, as of 20/09/2023
 
 _**CONFIG_LWIP_IPV6_DHCP6**_  
 Enable DHCPv6 stateless address autoconfiguration  
