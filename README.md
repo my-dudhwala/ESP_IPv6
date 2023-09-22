@@ -65,9 +65,8 @@ I (52407) example: ... allocated socket
 **Note:** For this I have searched on IDF article(Link is given below) about all of IPv6 menuconfig options, if you don't know about menuconfig, probably you are not using IDF, in IDF there is a long GUI setting to configure ESP code automatically. If you are using IDF and dont know menuconfig, enter "idf.py menuconfig" in cmd(Windows) you will know it soon in your ESP IDF journey...!, I am sorry if you are not using CLI, and yea, the configuration menu is also available in VS Code, IDF extension..., but CLI is more faster than VS code, I use VS code for editing the code only, Thanks  
 
 [ESP IDF menuconfig](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/kconfig.html#configuration-options-reference)  
-
-### About IP6 20/09/2023
-> Every setting containing **"IP6"** word in main title
+  
+> Every setting containing **"IP6"** word in main title is given below, as of 20/09/2023
   
 **_CONFIG_LWIP_IP6_FRAG_**  
 Enable fragment outgoing IP6 packets
@@ -139,7 +138,7 @@ Found in: Component config > LWIP > CONFIG_LWIP_DEBUG
 Default value:  
 No (disabled) if CONFIG_LWIP_DEBUG  
 
-> Every setting containing **"IPv6"** word in main title
+> Every setting containing **"IPv6"** word in main title is given below, as of 20/09/2023
 
 _**CONFIG_LWIP_IPV6_DHCP6**_  
 Enable DHCPv6 stateless address autoconfiguration  
