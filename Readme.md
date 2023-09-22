@@ -4,7 +4,7 @@
 
 I am working (actually trying) to connect ESP32 or ESP8266 with my IPv6 router. This repo is made and shared to update the status of my work and keep documentation of the process flow. I am open to modifying this document from anyone, and I am open to collaborating on this until the project works successfully.
 
-> You are requested to format this document, change where you think it should be there.
+> In this document, change where you think it should be there.
 
 ## Important Updates
 
