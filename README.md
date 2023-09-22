@@ -2,10 +2,11 @@
 I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. This repo is made and shared to update status of my work and keep documentation of the process flow, I am open to modify this document from anyone. And I am open to collaborate on this until the project works successfully.
 
 > You are requested to formate this document, change where you think it should be there.
-## Important updates
-> I am using **IDF version 4.4.5** to test some codes which are supported in this version without any problem.
-**Code related updates**
-> According to IDF documents, "Enable IPv4 stack. If you want to use IPv6 only TCP/IP stack, disable this." but I'm not seeing any exact option to the same, but yea, there are related options available. _There is an option named "Enable IPv4 Link-Local Addressing(AUTOIP)" but this is not disabling._
+## Important updates  
+I am using **IDF version 4.4.5** to test some codes which are supported in this version without any problem.  
+
+**Code related updates**  
+According to IDF documents, "Enable IPv4 stack. If you want to use IPv6 only TCP/IP stack, disable this." but I'm not seeing any exact option to the same, but yea, there are related options available. _There is an option named "Enable IPv4 Link-Local Addressing(AUTOIP)" but this is not disabling._
 ### Several updates
 #### 21/09/2023  
 **Reddit**  
