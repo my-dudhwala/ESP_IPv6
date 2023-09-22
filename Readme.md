@@ -2,15 +2,15 @@
 
 > "If you come across any errors or omissions in this document, please feel free to make updates or changes, and don't hesitate to restructure the content as needed."
 
-I am working (actually trying) to connect ESP32 or ESP8266 with my IPv6 router. This repo is made and shared to update the status of my work and keep documentation of the process flow. I am open to modifying this document from anyone, and I am open to collaborating on this until the project works successfully.  
+"I am actively working to establish a connection between ESP32 or ESP8266 and my IPv6 router. This repository serves as a platform to continuously update the progress of my work and maintain comprehensive documentation of the entire process. I welcome contributions and collaboration from anyone interested in helping to make this project a success. Additionally, the knowledge and insights gained from this project can be valuable to anyone seeking to work with similar setups."  
 
 ## Important Updates
 
-I am using **IDF version 4.4.5** to test some codes which are supported in this version without any problem.
+"I'm utilizing **IDF version 4.4.5** to test certain code because some of the IPv6 code and menuconfig options are compatible with this version, and they work without any issues."
 
 ### Code-related Updates
 
-According to IDF documents, "Enable IPv4 stack. If you want to use IPv6 only TCP/IP stack, disable this." but I'm not seeing any exact option to the same, but yeah, there are related options available. There is an option named "Enable IPv4 Link-Local Addressing (AUTOIP)" but this is not disabling.
+"According to IDF documents, 'Enable IPv4 stack. If you want to use IPv6 only TCP/IP stack, disable this.' However, it seems that pressing the enter button does not uncheck the option, as expected."
 
 #### Several Updates
 
@@ -26,7 +26,7 @@ According to IDF documents, "Enable IPv4 stack. If you want to use IPv6 only TCP
 
 ##### Error in Different Code
 
-Inbuilt example Code: `Espressif\frameworks\esp-idf-v4.4.5\examples\protocols\http_request`
+Inbuilt example Code: `Espressif\frameworks\esp-idf-v4.4.5\examples\protocols\http_request`  
 [On GitHub](https://github.com/espressif/esp-idf/blob/master/examples/protocols/http_request/main/http_request_example_main.c)
 
 **Error:** socket connect failed errno=113
@@ -54,10 +54,19 @@ E (48405) example: ... socket connect failed errno=113
 I (52406) example: DNS lookup succeeded. IP=93.184.216.34
 I (52407) example: ... allocated socket
 ```
+##### 20/09/2023
 
+  - esp_http_client (Built-in example)
+
+    > IDF 4.4.5
+    > Errors:
+    > E (13733) esp-tls: [sock=54] select() timeout
+    > E (13734) TRANSPORT_BASE: Failed to open a new connection: 32774
+    > E (13735) HTTP_CLIENT: Connection failed, sock < 0
+    > E (13740) HTTP_CLIENT: HTTP GET request failed: ESP_ERR_HTTP_CONNECT
 ## Menuconfig: Every Setting About IPv6 - 20/09/2023
 
-**Note:** For this, I have searched the IDF article (link is given below) about all IPv6 menuconfig options. If you don't know about menuconfig, you are probably not using IDF. In IDF, there is a long GUI setting to configure ESP code automatically. If you are using IDF and don't know menuconfig, enter `idf.py menuconfig` in cmd (Windows), and you will know it soon in your ESP IDF journey...! I am sorry if you are not using CLI, and yeah, the configuration menu is also available in VS Code, IDF extension..., but CLI is faster than VS code. I use VS code for editing the code only. Thanks.
+**Note:** I've conducted thorough research on IPv6 menuconfig options within the IDF, and you can find the details in the IDF article (link provided below). If you're unfamiliar with menuconfig, it's likely that you're not working with IDF. In IDF, there's an extensive GUI setting that allows for automatic configuration of ESP code. For those using IDF and looking to explore menuconfig, simply enter `idf.py menuconfig` in the command prompt (Windows), and you'll quickly familiarize yourself with it on your ESP IDF journey. I apologize if you're not using the command-line interface (CLI), but it's generally faster than using VS Code. Personally, I prefer to use VS Code solely for code editing. Thanks for your understanding..
 
 [ESP IDF menuconfig](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/kconfig.html#configuration-options-reference)
 
@@ -198,19 +207,6 @@ This option is used to disable the Network Discovery Protocol (NDP) if it is not
 
 Default value:
 Yes (enabled)
-
-## Example Codes and Errors
-
-- 20/09/2023
-
-  - esp_http_client (Built-in example)
-
-    > IDF 4.4.5
-    > Errors:
-    > E (13733) esp-tls: [sock=54] select() timeout
-    > E (13734) TRANSPORT_BASE: Failed to open a new connection: 32774
-    > E (13735) HTTP_CLIENT: Connection failed, sock < 0
-    > E (13740) HTTP_CLIENT: HTTP GET request failed: ESP_ERR_HTTP_CONNECT
 
 ## Initial and Old Updates
 
