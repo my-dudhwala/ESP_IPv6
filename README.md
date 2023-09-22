@@ -8,8 +8,9 @@ I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. T
 > According to IDF documents, "Enable IPv4 stack. If you want to use IPv6 only TCP/IP stack, disable this." but I'm not seeing any exact option to the same, but yea, there are related options available. _There is an option named "Enable IPv4 Link-Local Addressing(AUTOIP)" but this is not disabling._
 ### Several updates
 #### 21/09/2023  
-**Some posts on Reddit**
-[Got a reply on Reddit IPv6 community](https://www.reddit.com/r/ipv6/comments/16ods1t/comment/k1k2rtl/)  
+**Some posts on Reddit**  
+[IPv6 Community - Does anyone have connected Microcontroller(ESP) to IPv6 internet?](https://www.reddit.com/r/ipv6/comments/16ods1t/comment/k1k2rtl/)  
+[Arduino Community - how_to_connect_esp32_to_wifi_with_ipv6](https://www.reddit.com/r/arduino/comments/15spv4q/how_to_connect_esp32_to_wifi_with_ipv6/)
 
 #### Error update
 Inbuilt example Code: Espressif\frameworks\esp-idf-v4.4.5\examples\protocols\http_request>  
