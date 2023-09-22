@@ -1,4 +1,3 @@
-```markdown
 # ESP_IPv6
 
 I am working (actually trying) to connect ESP32 or ESP8266 with my IPv6 router. This repo is made and shared to update the status of my work and keep documentation of the process flow. I am open to modifying this document from anyone, and I am open to collaborating on this until the project works successfully.
@@ -34,7 +33,7 @@ Inbuilt example Code: `Espressif\frameworks\esp-idf-v4.4.5\examples\protocols\ht
 
 **Serial Output:**
 
-```plaintext
+```
 I (4966) esp_netif_handlers: example_connect: sta ip: 192.168.0.236, mask: 255.255.255.0, gw: 192.168.0.254
 I (4967) example_connect: Got IPv4 event: Interface "example_connect: sta" address: 192.168.0.236
 I (5550) example_connect: Got IPv6 event: Interface "example_connect: sta" address: fe80:0000:0000:0000:96e6:86ff:fe05:0dd0, type: ESP_IP6_ADDR_IS_LINK_LOCAL
@@ -250,4 +249,3 @@ _Future updates: I am placing all of my updates on my GitHub repo, link is given
 ,_
 
 [https://github.com/my-dudhwala/ESP_IPv6/](https://github.com/my-dudhwala/ESP_IPv6/)
-```
