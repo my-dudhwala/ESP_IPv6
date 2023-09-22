@@ -12,7 +12,7 @@ I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. T
 [IPv6 Community - Does anyone have connected Microcontroller(ESP) to IPv6 internet?](https://www.reddit.com/r/ipv6/comments/16ods1t/comment/k1k2rtl/)  
 [Arduino Community - how_to_connect_esp32_to_wifi_with_ipv6](https://www.reddit.com/r/arduino/comments/15spv4q/how_to_connect_esp32_to_wifi_with_ipv6/)
 
-#### Error update
+#### Error in different code
 Inbuilt example Code: Espressif\frameworks\esp-idf-v4.4.5\examples\protocols\http_request>  
 [On GitHub](https://github.com/espressif/esp-idf/blob/master/examples/protocols/http_request/main/http_request_example_main.c)  
 **Error :** socket connect failed errno=113  
