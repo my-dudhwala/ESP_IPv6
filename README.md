@@ -6,8 +6,9 @@ I am working(Actually trying) to connect ESP32 or ESP8266 with my IPv6 router. T
 > I am using **IDF version 4.4.5** to test some codes which are supported in this version without any problem.
 **Code related updates**
 > According to IDF documents, "Enable IPv4 stack. If you want to use IPv6 only TCP/IP stack, disable this." but I'm not seeing any exact option to the same, but yea, there are related options available. _There is an option named "Enable IPv4 Link-Local Addressing(AUTOIP)" but this is not disabling._
-
-### 21/09/2023
+### Several updates
+#### 21/09/2023  
+**Some posts on Reddit**
 [Got a reply on Reddit IPv6 community](https://www.reddit.com/r/ipv6/comments/16ods1t/comment/k1k2rtl/)  
 
 #### Error update
