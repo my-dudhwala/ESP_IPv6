@@ -1,10 +1,8 @@
 # ESP_IPv6
 
-> "If you encounter any errors or missing information in this document, specially words in a sentence, please refer to the old readme.md file located in the same directory for clarification."
+> "If you come across any errors or omissions in this document, please feel free to make updates or changes, and don't hesitate to restructure the content as needed."
 
-I am working (actually trying) to connect ESP32 or ESP8266 with my IPv6 router. This repo is made and shared to update the status of my work and keep documentation of the process flow. I am open to modifying this document from anyone, and I am open to collaborating on this until the project works successfully.
-
-> In this document, change where you think it should be there.
+I am working (actually trying) to connect ESP32 or ESP8266 with my IPv6 router. This repo is made and shared to update the status of my work and keep documentation of the process flow. I am open to modifying this document from anyone, and I am open to collaborating on this until the project works successfully.  
 
 ## Important Updates
 
