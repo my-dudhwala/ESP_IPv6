@@ -1,4 +1,4 @@
-The code is placed on (this GitHub respo.) [https://github.com/david-cermak/esp32-ipv6-examples]
+The code is placed on this GitHub respo. [https://github.com/david-cermak/esp32-ipv6-examples]
 
 #### Serial output
 In file included from H:/Espressif/frameworks/esp-idf-v5.1.1/examples/ipv6_test/main/ipv6_example_main.c:14:  
