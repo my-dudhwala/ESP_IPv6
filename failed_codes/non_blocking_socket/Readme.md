@@ -1,5 +1,7 @@
 #### Serial output
 
+IDF v5.1.1 Code location: Espressif\frameworks\esp-idf-v5.1.1\examples\protocols\sockets\non_blocking  
+
 I (4375) wifi:connected with TP-Link_C502 R&D, aid = 1, channel 2, BW20, bssid = b0:be:76:59:c5:02  
 I (4375) wifi:security: WPA2-PSK, phy: bgn, rssi: -50  
 I (4375) wifi:pm start, type: 1  
