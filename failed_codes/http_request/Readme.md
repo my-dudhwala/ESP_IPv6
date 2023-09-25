@@ -3,8 +3,11 @@
 #### Serial output
 
 I (4374) wifi:connected with TP-Link_C502 R&D, aid = 1, channel 2, BW20, bssid = b0:be:76:59:c5:02
+
 I (4374) wifi:security: WPA2-PSK, phy: bgn, rssi: -34
+
 I (4384) wifi:pm start, type: 1
+
 
 I (4394) wifi:<ba-add>idx:0 (ifx:0, b0:be:76:59:c5:02), tid:0, ssn:0, winSize:64
 I (4434) wifi:AP's beacon interval = 102400 us, DTIM period = 1
