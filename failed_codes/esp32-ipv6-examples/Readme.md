@@ -1,6 +1,6 @@
-In file included from H:/Espressif/frameworks/esp-idf-v5.1.1/examples/ipv6_test/main/ipv6_example_main.c:14:
-H:/Espressif/frameworks/esp-idf-v5.1.1/examples/ipv6_test/main/ipv6_example_main.c: In function 'mqtt_event_handler':
-H:/Espressif/frameworks/esp-idf-v5.1.1/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 7 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+In file included from H:/Espressif/frameworks/esp-idf-v5.1.1/examples/ipv6_test/main/ipv6_example_main.c:14:  
+H:/Espressif/frameworks/esp-idf-v5.1.1/examples/ipv6_test/main/ipv6_example_main.c: In function 'mqtt_event_handler':  
+H:/Espressif/frameworks/esp-idf-v5.1.1/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 7 has type 'int32_t' {aka   'long int'} [-Werror=format=]
 265 | #define LOG_COLOR(COLOR) "\033[0;" COLOR "m"
 | ^~~~~~~~~
 H:/Espressif/frameworks/esp-idf-v5.1.1/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
